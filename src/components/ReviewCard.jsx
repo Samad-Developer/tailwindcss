@@ -1,5 +1,6 @@
 import React from 'react'
 import { star } from '../assets/icons'
+import { motion } from 'framer-motion'
 const ReviewCard = ({
 imgURL,
 customerName,
@@ -7,6 +8,7 @@ feedback,
 rating,
 }) => {
   return (
+    <motion.div whileTap={{ scale: 0.8 }} >
     <div className='flex  justify-center items-center flex-col'>
       <img
         src={imgURL}
@@ -25,6 +27,7 @@ rating,
       </div>
       <h3 className='mt-1 font-palanquin text-3xl text-center font-bold'>{customerName}</h3>
     </div>
+    </motion.div>
   )
 }
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import ReviewCard from '../components/ReviewCard'
 import { reviews } from '../constants'
+
 const CustomerReview = () => {
   return (
     <section className='max-container'>
